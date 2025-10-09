@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { Globe, Languages, FileCheck, MessageSquare, Subtitles, Shield, Heart, Scale, Gamepad2, Newspaper, Phone, Mail, MapPin, ArrowRight, CheckCircle2, Zap, Clock, Award, ChevronDown, Menu, X, Star, Quote, TrendingUp, Users } from 'lucide-react';
+import { Globe, Languages, FileCheck, MessageSquare, Subtitles, Shield, Heart, Scale, Gamepad2, Newspaper, Phone, Mail, MapPin, ArrowRight, CheckCircle2, Zap, Clock, Award, ChevronDown, Menu, X, Star, Quote, TrendingUp, Users, Wallet, Laptop, Megaphone, BookOpen, Wrench, Landmark } from 'lucide-react';
 
 import { motion } from 'framer-motion';
 const TransoplanetHome = () => {
@@ -66,81 +66,219 @@ const TransoplanetHome = () => {
     }
   ];
 
-  const industries = [
-    {
-      icon: <Heart className="w-8 h-8" />,
-      title: "Medical & Healthcare",
-      description: "Clinical translations preserving accuracy and regulatory compliance",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80",
-      gradient: "from-red-500 to-pink-500"
-    },
-    {
-      icon: <Scale className="w-8 h-8" />,
-      title: "Legal & Government",
-      description: "Precise legal document translations with jurisdiction-specific expertise",
-      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&q=80",
-      gradient: "from-blue-600 to-indigo-600"
-    },
-    {
-      icon: <Gamepad2 className="w-8 h-8" />,
-      title: "Apps & Games",
-      description: "Full localization for mobile apps and gaming experiences",
-      image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&q=80",
-      gradient: "from-purple-500 to-pink-500"
-    },
-    {
-      icon: <Newspaper className="w-8 h-8" />,
-      title: "Press & Media",
-      description: "Media-ready translations maintaining brand voice and impact",
-      image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&q=80",
-      gradient: "from-orange-500 to-amber-500"
-    }
-  ];
 
-const testimonials = [
+const industries = [
+  {
+    icon: <Heart className="w-8 h-8" />,
+    title: "Medical & Healthcare Translation",
+    description: "Where precision meets compassion.",
+          image: "/medical.jpg",
+
+    gradient: "from-red-500 to-pink-500"
+  },
+  {
+    icon: <Scale className="w-8 h-8" />,
+    title: "Legal Translation",
+    description: "Every clause counts.",
+    image: "/legal.jpg",
+    gradient: "from-blue-600 to-indigo-600"
+  },
+  {
+    icon: <Wallet className="w-8 h-8" />,
+    title: "Financial & Insurance Translation",
+    description: "Translating trust and transparency.",
+           image: "/finance.jpg",
+
+    gradient: "from-green-500 to-emerald-600"
+  },
+  {
+    icon: <Laptop className="w-8 h-8" />,
+    title: "IT & Software Localization",
+    description: "Turning apps into global experiences.",
+       image: "/it.jpg",
+
+    gradient: "from-purple-500 to-indigo-500"
+  },
+  {
+    icon: <Megaphone className="w-8 h-8" />,
+    title: "Marketing & Transcreation",
+    description: "Adapting ideas, not just words.",
+       image: "/market.jpg",
+
+    gradient: "from-orange-500 to-amber-500"
+  },
+  {
+    icon: <BookOpen className="w-8 h-8" />,
+    title: "E-learning & Educational Content",
+    description: "Learning made local.",
+           image: "/education.jpg",
+
+    gradient: "from-teal-500 to-cyan-500"
+  },
+  {
+    icon: <Wrench className="w-8 h-8" />,
+    title: "Technical Translation",
+    description: "Manuals that speak every language.",
+          image: "/technical.jpg",
+
+    gradient: "from-gray-600 to-slate-700"
+  },
+  {
+    icon: <Landmark className="w-8 h-8" />,
+    title: "Government & Public Policy",
+    description: "Making governance multilingual.",
+          image: "/goverment.jpg",
+
+    gradient: "from-blue-700 to-sky-500"
+  },
+  {
+    icon: <Gamepad2 className="w-8 h-8" />,
+    title: "Game Localization",
+    description: "When play meets culture.",
+          image: "/game.jpg",
+
+    gradient: "from-pink-500 to-violet-600"
+  }
+];
+
+
+  const testimonials = [
     {
-      name: "Sarah Chen",
-      role: "CEO, TechVentures",
-      location: "San Francisco, CA",
-      text: "The results exceeded our expectations. ROI increased by 340% in just 6 months.",
+      author: "PAB Translation Centre",
+      role: "Project Manager",
+      company: "PAB Translation Centre",
+      hasLogo: true,
+      logoUrl: "https://via.placeholder.com/120x40/4F46E5/FFFFFF?text=PAB",
+      text: "Binod's expertise in managing multilingual translation projects with precision, cultural awareness, and accuracy has been invaluable. His professionalism, reliability, and timely delivery under tight deadlines make him a trusted partner.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop",
-      metric: "340% ROI",
-      icon: TrendingUp,
+      date: "Feb 2025",
+      gradient: "from-blue-500 to-indigo-600"
+    },
+    {
+      author: "Sonja Babic",
+      role: "Project Director",
+      company: "Halifax Consulting",
+      hasLogo: true,
+      logoUrl: "https://via.placeholder.com/120x40/7C3AED/FFFFFF?text=Halifax",
+      text: "Great cooperation always, very reliable partner.",
+      rating: 5,
+      date: "Jan 2025",
       gradient: "from-purple-500 to-pink-500"
     },
     {
-      name: "Marcus Johnson",
-      role: "Founder, InnovateLabs",
-      location: "Austin, TX",
-      text: "Game-changing partnership. Their expertise transformed our entire digital strategy.",
+      author: "Lingvopedia",
+      role: "Language Solutions Partner",
+      company: "Lingvopedia Language Solutions",
+      hasLogo: true,
+      logoUrl: "https://via.placeholder.com/120x40/10B981/FFFFFF?text=Lingvopedia",
+      text: "Everything is working out really well with our association. Thank you.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
-      metric: "10x Growth",
-      icon: Zap,
-      gradient: "from-blue-500 to-cyan-500"
+      date: "Apr 2023",
+      gradient: "from-emerald-500 to-green-600"
     },
     {
-      name: "Emily Rodriguez",
-      role: "Marketing Director",
-      location: "Miami, FL",
-      text: "Outstanding service and support. They truly understand what businesses need to succeed.",
+      author: "Jonah Ondieki",
+      role: "Language Services Manager",
+      company: "OJ-LanguageHub LLC",
+      hasLogo: false,
+      text: "Binod is the professional you would be looking for. Punctual deliveries and no complaints from clients. I firmly recommend him.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
-      metric: "5-Star Team",
-      icon: Award,
-      gradient: "from-orange-500 to-red-500"
+      date: "May 2020",
+      gradient: "from-cyan-500 to-blue-600"
     },
     {
-      name: "David Park",
-      role: "CTO, CloudScale",
-      location: "Seattle, WA",
-      text: "Incredibly professional team. Delivered on time and beyond scope expectations.",
+      author: "Kickwords Limited",
+      role: "Operations Manager",
+      company: "Kickwords Limited",
+      hasLogo: true,
+      logoUrl: "https://via.placeholder.com/120x40/EC4899/FFFFFF?text=Kickwords",
+      text: "Excellent! Binod is the linguist every translation agency wants to have and work with. His dedication and accuracy is top notch. Recommended.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
-      metric: "200+ Projects",
-      icon: Users,
-      gradient: "from-green-500 to-emerald-500"
+      date: "Jun 2018",
+      gradient: "from-rose-500 to-pink-600"
+    },
+    {
+      author: "IlaC",
+      role: "Translation Coordinator",
+      company: "ONCALL Language Services",
+      hasLogo: false,
+      text: "Binod is a kind and reliable translator, who delivers jobs in time and always faithful to the original. I have worked with him in 4/5 occasions and so far I can just say that I am willing to collaborate with him again in the future.",
+      rating: 5,
+      date: "Apr 2018",
+      gradient: "from-teal-500 to-cyan-600"
+    },
+    {
+      author: "Marti Adler",
+      role: "Project Coordinator",
+      company: "Local-M",
+      hasLogo: false,
+      text: "Good translations and communication. Always on time.",
+      rating: 5,
+      date: "Feb 2016",
+      gradient: "from-violet-500 to-purple-600"
+    },
+    {
+      author: "The Translation Gate",
+      role: "Quality Team",
+      company: "The Translation Gate, LLC",
+      hasLogo: true,
+      logoUrl: "https://via.placeholder.com/120x40/F59E0B/FFFFFF?text=TTG",
+      text: "Real professional, excellent quality, strictly follows instructions and always on time. Our team enjoys working with him.",
+      rating: 5,
+      date: "May 2016",
+      gradient: "from-orange-500 to-amber-600"
+    },
+    {
+      author: "Ale.V.",
+      role: "Project Manager",
+      company: "Lingua Pros, LLC",
+      hasLogo: true,
+      logoUrl: "https://via.placeholder.com/120x40/8B5CF6/FFFFFF?text=LinguaPros",
+      text: "Excellent work and timely delivery.",
+      rating: 5,
+      date: "Apr 2015",
+      gradient: "from-purple-500 to-violet-600"
+    },
+    {
+      author: "TheLocMasters",
+      role: "Localization Manager",
+      company: "TheLocMasters",
+      hasLogo: false,
+      text: "Great job, delivery always before deadline, high quality. Love to work with him again.",
+      rating: 5,
+      date: "Jul 2015",
+      gradient: "from-sky-500 to-blue-600"
+    },
+    {
+      author: "LingoTrust Team",
+      role: "Quality Assurance",
+      company: "LingoTrust Inc",
+      hasLogo: true,
+      logoUrl: "https://via.placeholder.com/120x40/3B82F6/FFFFFF?text=LingoTrust",
+      text: "Excellent translator. On time and accurate.",
+      rating: 5,
+      date: "Jan 2014",
+      gradient: "from-blue-500 to-indigo-600"
+    },
+    {
+      author: "Leah Mundy",
+      role: "Localization Lead",
+      company: "Eurotalk",
+      hasLogo: false,
+      text: "Very happy with the quality of the work.",
+      rating: 5,
+      date: "Dec 2013",
+      gradient: "from-pink-500 to-rose-600"
+    },
+    {
+      author: "Miguel Sacrulli",
+      role: "Events Coordinator",
+      company: "Eventos Rosario",
+      hasLogo: false,
+      text: "Great work. Clients were very happy with the job done.",
+      rating: 5,
+      date: "Aug 2009",
+      gradient: "from-red-500 to-orange-600"
     }
   ];
 
@@ -164,7 +302,7 @@ const testimonials = [
 
   const stats = [
     { number: "32+", label: "Languages Supported", icon: <Languages className="w-6 h-6" /> },
-    { number: "100M+", label: "Words Translated", icon: <FileCheck className="w-6 h-6" /> },
+    { number: "Connecting", label: "Words,, Culture & Businesses", icon: <FileCheck className="w-6 h-6" /> },
     { number: "15+", label: "Years of Experience", icon: <Award className="w-6 h-6" /> },
     { number: "99%", label: "Client Satisfaction", icon: <CheckCircle2 className="w-6 h-6" /> }
   ];
@@ -194,14 +332,7 @@ const testimonials = [
                 Expert translation services for Indian, South Asia, South-East Asia and European Languages
               </p>
               
-              <div className="flex flex-wrap gap-4">
-                <button className="group px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium shadow-xl shadow-blue-200 hover:shadow-2xl hover:shadow-blue-300 transition-all flex items-center gap-2">
-                  Get Started <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
-                <button className="px-8 py-4 rounded-xl bg-white text-slate-700 font-medium shadow-lg hover:shadow-xl transition-all">
-                  View Pricing
-                </button>
-              </div>
+             
             </div>
 
             <div className="relative">
@@ -279,11 +410,11 @@ const testimonials = [
       <section id="industries" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Industries We Serve</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Our Areas of Expertise</h2>
             <p className="text-xl text-slate-600">Specialized expertise across multiple sectors</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {industries.map((industry, i) => (
               <div key={i} className="group relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500">
                 <img 
@@ -339,9 +470,9 @@ const testimonials = [
         </div>
       </section>
 
-      {/* Testimonials */}
+     {/* Testimonials */}
      <section className="py-20 px-6 bg-gradient-to-br from-slate-50 to-slate-100">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -365,68 +496,76 @@ const testimonials = [
           <p className="text-xl text-slate-600">Real stories from real businesses</p>
         </motion.div>
 
-        {/* Testimonials Grid - Equal Card Layout */}
-        <motion.div 
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12"
-        >
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              variants={item}
-              whileHover={{ y: -8, scale: 1.02 }}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all relative overflow-hidden group"
-            >
-              {/* Gradient Background Effect */}
-              <div className={`absolute top-0 right-0 w-40 h-40 bg-gradient-to-br ${testimonial.gradient} opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-opacity`}></div>
-              
-              <div className="relative z-10">
-                {/* Icon Badge */}
-                <div className={`bg-gradient-to-br ${testimonial.gradient} w-12 h-12 rounded-xl flex items-center justify-center mb-4`}>
-                  {React.createElement(testimonial.icon, { className: "w-6 h-6 text-white" })}
-                </div>
+        {/* Auto-Sliding Testimonials */}
+        <div className="relative overflow-hidden pb-4 rounded-3xl">
+          <motion.div 
+            className="flex gap-6"
+            animate={{
+              x: [0, -100 * (testimonials.length / 3) + '%']
+            }}
+            transition={{
+              x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: testimonials.length * 5,
+                ease: "linear"
+              }
+            }}
+          >
+            {[...testimonials, ...testimonials].map((testimonial, index) => (
+              <motion.div
+                key={index}
+                className="flex-none w-[calc(33.333%-1rem)] min-w-[350px]"
+              >
+                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all relative overflow-hidden group h-full flex flex-col">
+                  {/* Gradient Background Effect */}
+                  <div className={`absolute top-0 right-0 w-40 h-40 bg-gradient-to-br ${testimonial.gradient} opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-opacity`}></div>
+                  
+                  <div className="relative z-10 flex flex-col h-full">
+                    {/* Company Logo or Gradient Badge */}
+                    <div className="mb-4 h-12 flex items-center">
+                      {testimonial.hasLogo ? (
+                        <div className="bg-white rounded-lg px-4 py-2 shadow-sm border border-slate-100">
+                          <img 
+                            src={testimonial.logoUrl} 
+                            alt={testimonial.company}
+                            className="h-8 object-contain"
+                          />
+                        </div>
+                      ) : (
+                        <div className={`bg-gradient-to-br ${testimonial.gradient} w-12 h-12 rounded-xl flex items-center justify-center`}>
+                          <Quote className="w-6 h-6 text-white" />
+                        </div>
+                      )}
+                    </div>
 
-                {/* Rating */}
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
+                    {/* Rating */}
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                      ))}
+                    </div>
 
-                {/* Quote */}
-                <Quote className="w-8 h-8 text-slate-200 mb-3" />
-                <p className="text-slate-700 mb-6 leading-relaxed text-base">
-                  {testimonial.text}
-                </p>
+                    {/* Quote Text - flex-grow to push footer down */}
+                    <div className="flex-grow mb-6">
+                      <p className="text-slate-700 leading-relaxed text-base">
+                        "{testimonial.text}"
+                      </p>
+                    </div>
 
-                {/* Author Info */}
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <img 
-                      src={testimonial.avatar} 
-                      alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover ring-2 ring-slate-100"
-                    />
-                    <div>
-                      <p className="font-bold text-slate-900">{testimonial.name}</p>
+                    {/* Author Info - stays at bottom */}
+                    <div className="border-t border-slate-100 pt-4">
+                      <p className="font-bold text-slate-900">{testimonial.author}</p>
                       <p className="text-slate-600 text-sm">{testimonial.role}</p>
+                      <p className="text-slate-500 text-xs mt-1">{testimonial.company}</p>
+                      <p className="text-slate-400 text-xs mt-2">{testimonial.date}</p>
                     </div>
                   </div>
-
-                  {/* Metric Badge */}
-                  <div className={`bg-gradient-to-br ${testimonial.gradient} text-white px-4 py-2 rounded-lg`}>
-                    <span className="font-bold text-sm whitespace-nowrap">{testimonial.metric}</span>
-                  </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-
-       
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </section>
 
