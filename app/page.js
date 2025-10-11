@@ -1,12 +1,16 @@
 "use client";
-import React, { useState, useEffect } from 'react';
-import { Globe, Languages, FileCheck, MessageSquare, Subtitles, Shield, Heart, Scale, Gamepad2, Newspaper, Phone, Mail, MapPin, ArrowRight, CheckCircle2, Zap, Clock, Award, ChevronDown, Menu, X, Star, Quote, TrendingUp, Users, Wallet, Laptop, Megaphone, BookOpen, Wrench, Landmark } from 'lucide-react';
-
+import React, { useState, useEffect,useRef } from 'react';
+import { Globe, Languages, FileCheck, MessageSquare, Subtitles, Shield, Heart, Scale, Gamepad2, Newspaper, Phone, Mail, MapPin, ArrowRight, CheckCircle2, Zap, Clock, Award, ChevronDown, Menu, X, Star, Quote, TrendingUp, Users, Wallet, Laptop, Megaphone, BookOpen, Wrench, Landmark ,ChevronLeft, ChevronRight,} from 'lucide-react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/swiper-bundle.css";
 import { motion } from 'framer-motion';
 const TransoplanetHome = () => {
   const [scrollY, setScrollY] = useState(0);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -356,9 +360,9 @@ const industries = [
                     <div key={i} className="bg-white rounded-2xl p-4 shadow-sm">
                       <div className="flex items-center gap-3 mb-2">
                         <div className="text-[#71d0f2]">{stat.icon}</div>
-                        <span className="text-2xl font-bold text-slate-900">{stat.number}</span>
+                        <span className="text-sm lg:text-2xl font-bold text-slate-900">{stat.number}</span>
                       </div>
-                      <p className="text-sm text-slate-600">{stat.label}</p>
+                      <p className="text-xs lg:text-sm text-slate-600">{stat.label}</p>
                     </div>
                   ))}
                 </div>
@@ -378,7 +382,7 @@ const industries = [
                   <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white text-[#71d0f2] mb-3 shadow">
                     {stat.icon}
                   </div>
-                  <div className="text-3xl font-bold text-slate-900 mb-1">{stat.number}</div>
+                  <div className="text-2xl lg:text-3xl font-bold text-slate-900 mb-1">{stat.number}</div>
                   <div className="text-sm text-slate-600">{stat.label}</div>
                 </div>
               ))}
@@ -429,7 +433,8 @@ const industries = [
                   alt={industry.title}
                   className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-[#71d0f2]/30 opacity-80 group-hover:opacity-70 transition-opacity" />
+               <div className="absolute inset-0 bg-black/40 group-hover:opacity-50 transition-opacity" />
+
                 <div className="absolute inset-0 flex flex-col justify-end p-8 text-white">
                   <div className="mb-4">{industry.icon}</div>
                   <h3 className="text-2xl font-bold mb-2">{industry.title}</h3>
@@ -478,7 +483,7 @@ const industries = [
                     animation: `fadeInUp 0.6s ease-out ${i * 0.1}s both`,
                   }}
                 >
-                  <div className="relative bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 w-[300px]">
+                  <div className="relative bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 w-[350px] lg:w-[300px]">
                     <div className="relative mb-6 overflow-hidden rounded-2xl ring-4 ring-white group-hover:ring-[#71d0f2] transition-all duration-300">
                       <img 
                         src={member.image} 
@@ -500,61 +505,110 @@ const industries = [
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 px-6 bg-[#f9fafb]">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#71d0f2]/10 text-[#71d0f2] mb-4">
-              <Star className="w-4 h-4 fill-[#71d0f2]" />
-              <span className="text-sm font-semibold">Trusted by 500+ Companies</span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              What Our Clients Say
-            </h2>
-            <p className="text-xl text-slate-600">Real stories from real businesses</p>
+     <section className="pt-20 pb-10 px-6 bg-[#f9fafb]">
+    <div className="max-w-7xl mx-auto relative">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#71d0f2]/10 text-[#71d0f2] mb-4">
+            <Star className="w-4 h-4 fill-[#71d0f2]" />
+            <span className="text-sm font-semibold">Trusted by 500+ Companies</span>
           </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+            What Our Clients Say
+          </h2>
+          <p className="text-xl text-slate-600">Real stories from real businesses</p>
+        </div>
 
-          <div className="relative overflow-hidden pb-4 rounded-3xl">
-            <div className="flex gap-6">
-              {[...testimonials, ...testimonials].map((testimonial, index) => (
-                <div key={index} className="flex-none w-[calc(33.333%-1rem)] min-w-[350px]">
-                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all relative overflow-hidden group h-full flex flex-col">
-                    <div className="absolute top-0 right-0 w-40 h-40 bg-[#71d0f2]/10 rounded-full blur-3xl group-hover:opacity-20 transition-opacity"></div>
-                    <div className="relative z-10 flex flex-col h-full">
-                      <div className="mb-4 h-12 flex items-center">
-                        {testimonial.hasLogo ? (
-                          <div className="bg-white rounded-lg px-4 py-2 shadow-sm border border-slate-100">
-                            <img src={testimonial.logoUrl} alt={testimonial.company} className="h-8 object-contain" />
-                          </div>
-                        ) : (
-                          <div className="bg-[#71d0f2] w-12 h-12 rounded-xl flex items-center justify-center">
-                            <Quote className="w-6 h-6 text-white" />
-                          </div>
-                        )}
+        <Swiper
+        modules={[Autoplay, Pagination, Navigation]}
+        spaceBetween={24}
+        slidesPerView={3}
+        loop={true}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        navigation={{
+          prevEl: prevRef.current,
+          nextEl: nextRef.current,
+        }}
+        onBeforeInit={(swiper) => {
+          swiper.params.navigation.prevEl = prevRef.current;
+          swiper.params.navigation.nextEl = nextRef.current;
+        }}
+        breakpoints={{
+          0: { slidesPerView: 1 },
+          640: { slidesPerView: 1.5 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+      >
+          {testimonials.map((testimonial, index) => (
+            <SwiperSlide key={index}>
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all relative overflow-hidden group h-[420px] flex flex-col mb-12 mx-2">
+                <div className="absolute top-0 right-0 w-40 h-40 bg-[#71d0f2]/10 rounded-full blur-3xl group-hover:opacity-20 transition-opacity"></div>
+
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="mb-4 h-12 flex items-center">
+                    {testimonial.hasLogo ? (
+                      <div className="bg-white rounded-lg px-4 py-2 shadow-sm border border-slate-100">
+                        <img
+                          src={testimonial.logoUrl}
+                          alt={testimonial.company}
+                          className="h-8 object-contain"
+                        />
                       </div>
-                      <div className="flex gap-1 mb-4">
-                        {[...Array(testimonial.rating)].map((_, i) => (
-                          <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                        ))}
+                    ) : (
+                      <div className="bg-[#71d0f2] w-12 h-12 rounded-xl flex items-center justify-center">
+                        <Quote className="w-6 h-6 text-white" />
                       </div>
-                      <div className="flex-grow mb-6">
-                        <p className="text-slate-700 leading-relaxed text-base">
-                          "{testimonial.text}"
-                        </p>
-                      </div>
-                      <div className="border-t border-slate-100 pt-4">
-                        <p className="font-bold text-slate-900">{testimonial.author}</p>
-                        <p className="text-slate-600 text-sm">{testimonial.role}</p>
-                        <p className="text-slate-500 text-xs mt-1">{testimonial.company}</p>
-                        <p className="text-slate-400 text-xs mt-2">{testimonial.date}</p>
-                      </div>
-                    </div>
+                    )}
+                  </div>
+
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                      />
+                    ))}
+                  </div>
+
+                 <div className="flex-grow mb-6 overflow-y-auto">
+                    <p className="text-slate-700 leading-relaxed text-base">
+                      "{testimonial.text}"
+                    </p>
+                  </div>
+
+                  <div className="border-t border-slate-100 pt-4">
+                    <p className="font-bold text-slate-900">{testimonial.author}</p>
+                    <p className="text-slate-600 text-sm">{testimonial.role}</p>
+                    <p className="text-slate-500 text-xs mt-1">{testimonial.company}</p>
+                    <p className="text-slate-400 text-xs mt-2">{testimonial.date}</p>
                   </div>
                 </div>
-              ))}
-            </div>
-          </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+       {/* Custom Navigation Buttons */}
+      <div
+        ref={prevRef}
+       className="absolute left-[-1rem] top-[60%] -translate-y-1/2 z-10 cursor-pointer"
+      >
+        <div className="w-11 h-11 bg-white rounded-xl shadow-lg hover:shadow-xl hover:bg-[#71d0f2] transition-all duration-300 flex items-center justify-center group border border-slate-100 hover:border-transparent">
+          <ChevronLeft className="w-5 h-5 text-slate-600 group-hover:text-white transition-colors" />
         </div>
-      </section>
+      </div>
+
+      <div
+        ref={nextRef}
+        className="absolute right-[-1rem] top-[60%] -translate-y-1/2 z-10 cursor-pointer"
+      >
+        <div className="w-11 h-11 bg-white rounded-xl shadow-lg hover:shadow-xl hover:bg-[#71d0f2] transition-all duration-300 flex items-center justify-center group border border-slate-100 hover:border-transparent">
+          <ChevronRight className="w-5 h-5 text-slate-600 group-hover:text-white transition-colors" />
+        </div>
+      </div>
+    </div>
+    </section>
+
 
       {/* CTA Section */}
       <section className="py-20 px-6">
@@ -589,6 +643,7 @@ const industries = [
             transform: translateY(0);
           }
         }
+     
       `}</style>
     </div>
   );

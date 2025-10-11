@@ -80,7 +80,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-white pt-24 px-4 md:hidden">
+        <div className="fixed inset-0 z-40 bg-white pt-30 px-4 md:hidden">
           <div className="flex flex-col space-y-4">
             <Link href="/" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
               Home
