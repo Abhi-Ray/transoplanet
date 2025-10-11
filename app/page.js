@@ -148,7 +148,8 @@ const industries = [
       role: "Project Manager",
       company: "PAB Translation Centre",
       hasLogo: true,
-      logoUrl: "https://via.placeholder.com/120x40/4F46E5/FFFFFF?text=PAB",
+           logoUrl: "/pab.png",
+
       text: "Binod's expertise in managing multilingual translation projects with precision, cultural awareness, and accuracy has been invaluable. His professionalism, reliability, and timely delivery under tight deadlines make him a trusted partner.",
       rating: 5,
       date: "Feb 2025",
@@ -159,7 +160,8 @@ const industries = [
       role: "Project Director",
       company: "Halifax Consulting",
       hasLogo: true,
-      logoUrl: "https://via.placeholder.com/120x40/7C3AED/FFFFFF?text=Halifax",
+           logoUrl: "/hail.png",
+
       text: "Great cooperation always, very reliable partner.",
       rating: 5,
       date: "Jan 2025",
@@ -170,7 +172,8 @@ const industries = [
       role: "Language Solutions Partner",
       company: "Lingvopedia Language Solutions",
       hasLogo: true,
-      logoUrl: "https://via.placeholder.com/120x40/10B981/FFFFFF?text=Lingvopedia",
+           logoUrl: "/lingo.png",
+
       text: "Everything is working out really well with our association. Thank you.",
       rating: 5,
       date: "Apr 2023",
@@ -180,7 +183,9 @@ const industries = [
       author: "Jonah Ondieki",
       role: "Language Services Manager",
       company: "OJ-LanguageHub LLC",
-      hasLogo: false,
+      hasLogo: true,
+           logoUrl: "/oj.png",
+
       text: "Binod is the professional you would be looking for. Punctual deliveries and no complaints from clients. I firmly recommend him.",
       rating: 5,
       date: "May 2020",
@@ -191,7 +196,7 @@ const industries = [
       role: "Operations Manager",
       company: "Kickwords Limited",
       hasLogo: true,
-      logoUrl: "https://via.placeholder.com/120x40/EC4899/FFFFFF?text=Kickwords",
+      logoUrl: "/kick.png",
       text: "Excellent! Binod is the linguist every translation agency wants to have and work with. His dedication and accuracy is top notch. Recommended.",
       rating: 5,
       date: "Jun 2018",
@@ -201,7 +206,9 @@ const industries = [
       author: "IlaC",
       role: "Translation Coordinator",
       company: "ONCALL Language Services",
-      hasLogo: false,
+      hasLogo: true,
+      logoUrl: "/oncall.png",
+
       text: "Binod is a kind and reliable translator, who delivers jobs in time and always faithful to the original. I have worked with him in 4/5 occasions and so far I can just say that I am willing to collaborate with him again in the future.",
       rating: 5,
       date: "Apr 2018",
@@ -222,7 +229,8 @@ const industries = [
       role: "Quality Team",
       company: "The Translation Gate, LLC",
       hasLogo: true,
-      logoUrl: "https://via.placeholder.com/120x40/F59E0B/FFFFFF?text=TTG",
+           logoUrl: "/gate.png",
+
       text: "Real professional, excellent quality, strictly follows instructions and always on time. Our team enjoys working with him.",
       rating: 5,
       date: "May 2016",
@@ -233,7 +241,8 @@ const industries = [
       role: "Project Manager",
       company: "Lingua Pros, LLC",
       hasLogo: true,
-      logoUrl: "https://via.placeholder.com/120x40/8B5CF6/FFFFFF?text=LinguaPros",
+           logoUrl: "/pro.png",
+
       text: "Excellent work and timely delivery.",
       rating: 5,
       date: "Apr 2015",
@@ -243,7 +252,9 @@ const industries = [
       author: "TheLocMasters",
       role: "Localization Manager",
       company: "TheLocMasters",
-      hasLogo: false,
+      hasLogo: true,
+           logoUrl: "/loc.png",
+
       text: "Great job, delivery always before deadline, high quality. Love to work with him again.",
       rating: 5,
       date: "Jul 2015",
@@ -253,8 +264,8 @@ const industries = [
       author: "LingoTrust Team",
       role: "Quality Assurance",
       company: "LingoTrust Inc",
-      hasLogo: true,
-      logoUrl: "https://via.placeholder.com/120x40/3B82F6/FFFFFF?text=LingoTrust",
+      hasLogo: false,
+
       text: "Excellent translator. On time and accurate.",
       rating: 5,
       date: "Jan 2014",
@@ -264,7 +275,9 @@ const industries = [
       author: "Leah Mundy",
       role: "Localization Lead",
       company: "Eurotalk",
-      hasLogo: false,
+      hasLogo: true,
+           logoUrl: "/euro.png",
+
       text: "Very happy with the quality of the work.",
       rating: 5,
       date: "Dec 2013",
@@ -302,14 +315,12 @@ const industries = [
 
   const stats = [
     { number: "32+", label: "Languages Supported", icon: <Languages className="w-6 h-6" /> },
-    { number: "Connecting", label: "Words,, Culture & Businesses", icon: <FileCheck className="w-6 h-6" /> },
+    { number: "Connecting", label: "Words, Culture & Businesses", icon: <FileCheck className="w-6 h-6" /> },
     { number: "15+", label: "Years of Experience", icon: <Award className="w-6 h-6" /> },
     { number: "99%", label: "Client Satisfaction", icon: <CheckCircle2 className="w-6 h-6" /> }
   ];
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
-     
+    <div className="min-h-screen bg-[#f9fafb]">
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-6">
@@ -317,37 +328,34 @@ const industries = [
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-lg mb-6">
-                <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                <div className="w-2 h-2 rounded-full bg-[#71d0f2] animate-pulse" />
                 <span className="text-sm font-medium text-slate-700">Trusted by 500+ companies worldwide</span>
               </div>
-              
+
               <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
                 One-Stop Solution in
-                <span className="block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                <span className="block text-[#71d0f2]">
                   Translation
                 </span>
               </h1>
-              
+
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 Expert translation services for Indian, South Asia, South-East Asia and European Languages
               </p>
-              
-             
             </div>
 
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-3xl blur-3xl opacity-20" />
               <div className="relative bg-white rounded-3xl shadow-2xl p-8 backdrop-blur-sm">
                 <img 
-                  src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80" 
+                  src="/hero.jpeg" 
                   alt="Translation team"
                   className="w-full h-80 object-cover rounded-2xl"
                 />
                 <div className="mt-6 grid grid-cols-2 gap-4">
                   {stats.slice(0, 2).map((stat, i) => (
-                    <div key={i} className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-4 shadow-sm">
+                    <div key={i} className="bg-white rounded-2xl p-4 shadow-sm">
                       <div className="flex items-center gap-3 mb-2">
-                        <div className="text-blue-600">{stat.icon}</div>
+                        <div className="text-[#71d0f2]">{stat.icon}</div>
                         <span className="text-2xl font-bold text-slate-900">{stat.number}</span>
                       </div>
                       <p className="text-sm text-slate-600">{stat.label}</p>
@@ -367,7 +375,7 @@ const industries = [
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, i) => (
                 <div key={i} className="text-center">
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-100 text-blue-600 mb-3">
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white text-[#71d0f2] mb-3 shadow">
                     {stat.icon}
                   </div>
                   <div className="text-3xl font-bold text-slate-900 mb-1">{stat.number}</div>
@@ -378,7 +386,6 @@ const industries = [
           </div>
         </div>
       </section>
-
       {/* Services Section */}
       <section id="services" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
@@ -390,13 +397,13 @@ const industries = [
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, i) => (
               <div key={i} className="group relative">
-                <div className={`h-full ${service.color} rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-white`}>
-                  <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white shadow-md mb-5 ${service.iconColor}`}>
+                <div className={`h-full bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-white`}>
+                  <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#71d0f2] text-white mb-5`}>
                     {service.icon}
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 mb-3">{service.title}</h3>
                   <p className="text-slate-700 leading-relaxed">{service.description}</p>
-                  <div className="mt-5 flex items-center text-blue-600 font-medium group-hover:gap-2 transition-all">
+                  <div className="mt-5 flex items-center text-[#71d0f2] font-medium group-hover:gap-2 transition-all">
                     Learn more <ArrowRight className="w-4 h-4 ml-1" />
                   </div>
                 </div>
@@ -406,7 +413,7 @@ const industries = [
         </div>
       </section>
 
-      {/* Industries Section */}
+     {/* Industries Section */}
       <section id="industries" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -422,7 +429,7 @@ const industries = [
                   alt={industry.title}
                   className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-t ${industry.gradient} opacity-80 group-hover:opacity-70 transition-opacity`} />
+                <div className="absolute inset-0 bg-[#71d0f2]/30 opacity-80 group-hover:opacity-70 transition-opacity" />
                 <div className="absolute inset-0 flex flex-col justify-end p-8 text-white">
                   <div className="mb-4">{industry.icon}</div>
                   <h3 className="text-2xl font-bold mb-2">{industry.title}</h3>
@@ -434,154 +441,134 @@ const industries = [
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-blue-50 to-indigo-50">
-        <div className="max-w-7xl mx-auto">
+
+      {/* Team Section */}
+      <section className="py-20 px-6 bg-[#f0f8ff] relative overflow-hidden">
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">How It Works</h2>
-            <p className="text-xl text-slate-600">Simple, efficient, and reliable process</p>
+            <div className="inline-block mb-4">
+              <span className="px-4 py-2 bg-[#71d0f2]/10 text-[#71d0f2] rounded-full text-sm font-semibold">
+                Our Team
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+              Meet Our Team
+            </h2>
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              Expert linguists dedicated to excellence
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { num: "01", title: "Upload Documents", desc: "Share your content securely through our platform", icon: <FileCheck className="w-8 h-8" /> },
-              { num: "02", title: "Expert Translation", desc: "Our team of native translators works on your project", icon: <Languages className="w-8 h-8" /> },
-              { num: "03", title: "Quality Delivery", desc: "Receive polished, accurate translations and services on time", icon: <CheckCircle2 className="w-8 h-8" /> }
-            ].map((step, i) => (
-              <div key={i} className="relative">
-                <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="text-6xl font-bold text-blue-100">{step.num}</div>
-                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-lg">
-                      {step.icon}
+          <div className="flex justify-center">
+            <div className="grid sm:grid-cols-4 gap-10 justify-items-center">
+              {[
+                { name: "Binod Ringania", image: "/binod.jpeg" },
+                { name: "Deepshikha", image: "/deepshikha.jpeg" },
+                { name: "Arif Hussain", image: "/arif.jpeg" },
+                { name: "Ayush Bali", image: "/ayush.jpeg" },
+                { name: "Riju Debnath", image: "/Riju.jpeg" },
+                { name: "Surajit Laskar", image: "/surajet.jpeg" },
+                { name: "Navneet", image: "/navneet.jpeg" },
+                { name: "Abhirup Agarwal", image: "/abhirup.jpeg" },
+              ].map((member, i) => (
+                <div 
+                  key={i} 
+                  className="group"
+                  style={{
+                    animation: `fadeInUp 0.6s ease-out ${i * 0.1}s both`,
+                  }}
+                >
+                  <div className="relative bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 w-[300px]">
+                    <div className="relative mb-6 overflow-hidden rounded-2xl ring-4 ring-white group-hover:ring-[#71d0f2] transition-all duration-300">
+                      <img 
+                        src={member.image} 
+                        alt={member.name}
+                        className="w-full aspect-square object-cover transform group-hover:scale-110 transition-transform duration-700"
+                      />
+                    </div>
+                    <div className="text-center">
+                      <h3 className="text-xl font-bold text-slate-900 mb-1 group-hover:text-[#71d0f2] transition-colors duration-300">
+                        {member.name}
+                      </h3>
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">{step.title}</h3>
-                  <p className="text-slate-600">{step.desc}</p>
                 </div>
-                {i < 2 && (
-                  <div className="hidden md:block absolute top-1/2 -right-4 text-blue-300">
-                    <ArrowRight className="w-8 h-8" />
-                  </div>
-                )}
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-     {/* Testimonials */}
-     <section className="py-20 px-6 bg-gradient-to-br from-slate-50 to-slate-100">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <motion.div
-            initial={{ scale: 0.9 }}
-            whileInView={{ scale: 1 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full mb-4"
-          >
-            <Star className="w-4 h-4 fill-blue-700" />
-            <span className="text-sm font-semibold">Trusted by 500+ Companies</span>
-          </motion.div>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            What Our Clients Say
-          </h2>
-          <p className="text-xl text-slate-600">Real stories from real businesses</p>
-        </motion.div>
+      {/* Testimonials */}
+      <section className="py-20 px-6 bg-[#f9fafb]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#71d0f2]/10 text-[#71d0f2] mb-4">
+              <Star className="w-4 h-4 fill-[#71d0f2]" />
+              <span className="text-sm font-semibold">Trusted by 500+ Companies</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+              What Our Clients Say
+            </h2>
+            <p className="text-xl text-slate-600">Real stories from real businesses</p>
+          </div>
 
-        {/* Auto-Sliding Testimonials */}
-        <div className="relative overflow-hidden pb-4 rounded-3xl">
-          <motion.div 
-            className="flex gap-6"
-            animate={{
-              x: [0, -100 * (testimonials.length / 3) + '%']
-            }}
-            transition={{
-              x: {
-                repeat: Infinity,
-                repeatType: "loop",
-                duration: testimonials.length * 5,
-                ease: "linear"
-              }
-            }}
-          >
-            {[...testimonials, ...testimonials].map((testimonial, index) => (
-              <motion.div
-                key={index}
-                className="flex-none w-[calc(33.333%-1rem)] min-w-[350px]"
-              >
-                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all relative overflow-hidden group h-full flex flex-col">
-                  {/* Gradient Background Effect */}
-                  <div className={`absolute top-0 right-0 w-40 h-40 bg-gradient-to-br ${testimonial.gradient} opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-opacity`}></div>
-                  
-                  <div className="relative z-10 flex flex-col h-full">
-                    {/* Company Logo or Gradient Badge */}
-                    <div className="mb-4 h-12 flex items-center">
-                      {testimonial.hasLogo ? (
-                        <div className="bg-white rounded-lg px-4 py-2 shadow-sm border border-slate-100">
-                          <img 
-                            src={testimonial.logoUrl} 
-                            alt={testimonial.company}
-                            className="h-8 object-contain"
-                          />
-                        </div>
-                      ) : (
-                        <div className={`bg-gradient-to-br ${testimonial.gradient} w-12 h-12 rounded-xl flex items-center justify-center`}>
-                          <Quote className="w-6 h-6 text-white" />
-                        </div>
-                      )}
-                    </div>
-
-                    {/* Rating */}
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                      ))}
-                    </div>
-
-                    {/* Quote Text - flex-grow to push footer down */}
-                    <div className="flex-grow mb-6">
-                      <p className="text-slate-700 leading-relaxed text-base">
-                        "{testimonial.text}"
-                      </p>
-                    </div>
-
-                    {/* Author Info - stays at bottom */}
-                    <div className="border-t border-slate-100 pt-4">
-                      <p className="font-bold text-slate-900">{testimonial.author}</p>
-                      <p className="text-slate-600 text-sm">{testimonial.role}</p>
-                      <p className="text-slate-500 text-xs mt-1">{testimonial.company}</p>
-                      <p className="text-slate-400 text-xs mt-2">{testimonial.date}</p>
+          <div className="relative overflow-hidden pb-4 rounded-3xl">
+            <div className="flex gap-6">
+              {[...testimonials, ...testimonials].map((testimonial, index) => (
+                <div key={index} className="flex-none w-[calc(33.333%-1rem)] min-w-[350px]">
+                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all relative overflow-hidden group h-full flex flex-col">
+                    <div className="absolute top-0 right-0 w-40 h-40 bg-[#71d0f2]/10 rounded-full blur-3xl group-hover:opacity-20 transition-opacity"></div>
+                    <div className="relative z-10 flex flex-col h-full">
+                      <div className="mb-4 h-12 flex items-center">
+                        {testimonial.hasLogo ? (
+                          <div className="bg-white rounded-lg px-4 py-2 shadow-sm border border-slate-100">
+                            <img src={testimonial.logoUrl} alt={testimonial.company} className="h-8 object-contain" />
+                          </div>
+                        ) : (
+                          <div className="bg-[#71d0f2] w-12 h-12 rounded-xl flex items-center justify-center">
+                            <Quote className="w-6 h-6 text-white" />
+                          </div>
+                        )}
+                      </div>
+                      <div className="flex gap-1 mb-4">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                        ))}
+                      </div>
+                      <div className="flex-grow mb-6">
+                        <p className="text-slate-700 leading-relaxed text-base">
+                          "{testimonial.text}"
+                        </p>
+                      </div>
+                      <div className="border-t border-slate-100 pt-4">
+                        <p className="font-bold text-slate-900">{testimonial.author}</p>
+                        <p className="text-slate-600 text-sm">{testimonial.role}</p>
+                        <p className="text-slate-500 text-xs mt-1">{testimonial.company}</p>
+                        <p className="text-slate-400 text-xs mt-2">{testimonial.date}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </motion.div>
-            ))}
-          </motion.div>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/* CTA Section */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-3xl shadow-2xl p-12 text-center text-white relative overflow-hidden">
+          <div className="bg-[#71d0f2] rounded-3xl shadow-2xl p-12 text-center text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-white/10 backdrop-blur-3xl" />
             <div className="relative z-10">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Go Global?</h2>
               <p className="text-xl mb-8 text-blue-100">Join hundreds of companies who trust Transoplanet</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="px-8 py-4 rounded-xl bg-white text-blue-600 font-bold shadow-xl hover:shadow-2xl transition-all">
+                <button className="px-8 py-4 rounded-xl bg-white text-[#71d0f2] font-bold shadow-xl hover:shadow-2xl transition-all">
                   Get Free Quote
                 </button>
-                <button className="px-8 py-4 rounded-xl border-2 border-white text-white font-bold hover:bg-white hover:text-blue-600 transition-all">
+                <button className="px-8 py-4 rounded-xl border-2 border-white text-white font-bold hover:bg-white hover:text-[#71d0f2] transition-all">
                   Contact Sales
                 </button>
               </div>
@@ -590,7 +577,19 @@ const industries = [
         </div>
       </section>
 
-      
+      {/* CSS Animations */}
+      <style jsx>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </div>
   );
 };
