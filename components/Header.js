@@ -46,24 +46,24 @@ const Header = () => {
               <Link href="/" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
                 Home
               </Link>
-              <Link href="#" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
+              <Link href="/about" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
                 About Us
               </Link>
-              <Link href="#" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
+              <Link href="/services" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
                 Services
               </Link>
-              <Link href="#" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
+              <Link href="/pricing" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
                 Pricing
               </Link>
-              <Link href="#" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
+              <Link href="/testimonial" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
                 Testimonials
               </Link>
-              <Link href="#" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
+              <Link href="/contact" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
                 Contact
               </Link>
-              <button className="bg-[#71d0f2] text-white px-6 py-2 rounded-full hover:bg-[#5bc9ef] hover:shadow-lg transform hover:scale-105 transition">
+              <Link href="/contact" className="bg-[#71d0f2] text-white px-6 py-2 rounded-full hover:bg-[#5bc9ef] hover:shadow-lg transform hover:scale-105 transition">
                 Get a Quote
-              </button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -85,24 +85,24 @@ const Header = () => {
             <Link href="/" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
               Home
             </Link>
-            <Link href="#" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/about" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
               About Us
             </Link>
-            <Link href="#" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/services" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
               Services
             </Link>
-            <Link href="#" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/pricing" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
               Pricing
             </Link>
-            <Link href="#" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/testimonial" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
               Testimonials
             </Link>
-            <Link href="#" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/contact" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
               Contact
             </Link>
-            <button className="bg-[#71d0f2] text-white px-6 py-3 rounded-full w-full hover:bg-[#5bc9ef] transition">
+            <Link href="/contact" className="bg-[#71d0f2] text-white px-6 py-3 rounded-full w-full hover:bg-[#5bc9ef] transition">
               Get a Quote
-            </button>
+            </Link>
           </div>
         </div>
       )}
