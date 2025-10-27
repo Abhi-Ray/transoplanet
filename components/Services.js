@@ -146,6 +146,28 @@ const ServicesPage = () => {
       region: "Indian Languages",
       languages: ["Hindi", "Bengali", "Tamil", "Telugu", "Marathi", "Gujarati", "Kannada", "Malayalam", "Punjabi", "Odia", "Assamese", "Urdu"]
     },
+   {
+  region: "Indian Rare Languages",
+  languages: [
+    "Bodo",
+    "Bhojpuri",
+    "Chhattisgarhi",
+    "Dogri",
+    "Garo",
+    "Khasi",
+    "Konkani",
+    "Manipuri",
+    "Mizo",
+    "Maithili",
+    "Newari",
+    "Rajasthani",
+    "Santhali",
+    "Sanskrit",
+    "Sindhi",
+    "Tibbetan"
+  ]
+}
+,
     {
       region: "South Asian",
       languages: ["Nepali", "Sinhala", "Pashto", "Dari", "Dhivehi"]

@@ -117,10 +117,11 @@ const PricingPage = () => {
       question: "Do you offer volume discounts?",
       answer: "Yes, we offer competitive volume discounts for large projects and ongoing translation needs. Contact our sales team for custom pricing based on your requirements."
     },
-    {
-      question: "What payment methods do you accept?",
-      answer: "We accept bank transfers, credit/debit cards, UPI, and online payment platforms. For enterprise clients, we also offer invoice-based payment terms."
-    },
+   {
+  question: "What payment methods do you accept?",
+  answer: "We accept bank transfers, credit/debit cards, UPI, PayPal, Wire Transfer, and ACH (for US and UK clients). For enterprise clients, we also offer invoice-based payment terms."
+}
+,
     {
       question: "Are revisions included in the price?",
       answer: "Yes, all packages include at least one round of revisions. Professional and Enterprise packages include additional revision rounds to ensure your complete satisfaction."

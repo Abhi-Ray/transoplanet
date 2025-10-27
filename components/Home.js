@@ -346,7 +346,7 @@ const industries = [
               </h1>
 
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                Expert translation services for Indian, South Asia, South-East Asia and European Languages
+                Expert translation services for Indian, South Asian, South-East Asian and European Languages
               </p>
             </div>
 

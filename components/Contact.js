@@ -80,7 +80,7 @@ const ContactPage = () => {
         
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Get In Touch
+            Get in Touch
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8">
             Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.

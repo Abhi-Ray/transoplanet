@@ -140,11 +140,11 @@ const AboutPage = () => {
                 </p>
                 <div className="flex gap-8">
                   <div>
-                    <h3 className="text-3xl font-bold" style={{ color: '#71d0f2' }}>500+</h3>
+                    <h3 className="text-3xl font-bold" style={{ color: '#71d0f2' }}>300+</h3>
                     <p className="text-gray-600">Expert Translators</p>
                   </div>
                   <div>
-                    <h3 className="text-3xl font-bold" style={{ color: '#71d0f2' }}>1000+</h3>
+                    <h3 className="text-3xl font-bold" style={{ color: '#71d0f2' }}>500+</h3>
                     <p className="text-gray-600">Happy Clients</p>
                   </div>
                   <div>
