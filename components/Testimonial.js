@@ -31,6 +31,27 @@ const TestimonialsPage = () => {
       date: "Jan 2025"
     },
     {
+      id: 14,
+      author: "Victoria Pierce",
+      role: "Project Manager",
+      company: "Language Connect",
+      hasLogo: false,
+      text: "Binod is a skilled linguist and has a professional approach to work. He always adheres to deadlines, and is flexible, accurate and responsive. I am confident that he would be an asset to any organisation.",
+      rating: 5,
+      date: "Oct 2024"
+    },
+    {
+      id: 15,
+      author: "Al HADEED TRANSLATION / AHTS",
+      role: "Project Coordinator",
+      company: "Al Hadeed Translation Services",
+      hasLogo: true,
+      text: "Punctual and experienced translator..",
+      rating: 5,
+      logoUrl: "/ahts.png",
+      date: "Aug 2024"
+    },
+    {
       id: 3,
       author: "Lingvopedia",
       role: "Language Solutions Partner",
@@ -148,27 +169,7 @@ const TestimonialsPage = () => {
       rating: 5,
       date: "Aug 2009"
     },
-    {
-      id: 14,
-      author: "Victoria Pierce",
-      role: "Project Manager",
-      company: "Language Connect",
-      hasLogo: false,
-      text: "Binod is a skilled linguist and has a professional approach to work. He always adheres to deadlines, and is flexible, accurate and responsive. I am confident that he would be an asset to any organisation.",
-      rating: 5,
-      date: "Oct 2024"
-    },
-    {
-      id: 15,
-      author: "Al HADEED TRANSLATION / AHTS",
-      role: "Project Coordinator",
-      company: "Al Hadeed Translation Services",
-      hasLogo: true,
-      text: "Punctual and experienced translator..",
-      rating: 5,
-      logoUrl: "/ahts.png",
-      date: "Aug 2024"
-    }
+    
   ];
 
   const stats = [
