@@ -147,7 +147,7 @@ const ContactPage = () => {
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 border-2" style={{ borderColor: '#e5e7eb' }}>
-              <form action="https://formsubmit.co/sspeedydemon@gmail.com" method="POST" className="space-y-6">
+              <form action="https://formsubmit.co/binod@transoplanet.com" method="POST" className="space-y-6">
                 {/* Hidden fields for FormSubmit configuration */}
                 <input type="hidden" name="_subject" value="New Contact Form Submission - Transoplanet" />
                 <input type="hidden" name="_captcha" value="false" />

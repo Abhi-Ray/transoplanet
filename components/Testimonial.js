@@ -15,7 +15,7 @@ const TestimonialsPage = () => {
       company: "PAB Translation Centre",
       hasLogo: true,
       logoUrl: "/pab.png",
-      text: "Binod's expertise in managing multilingual translation projects with precision, cultural awareness, and accuracy has been invaluable. His professionalism, reliability, and timely delivery under tight deadlines make him a trusted partner.",
+      text: "We are truly grateful for Binod's exceptional work as our language supplier. His expertise in managing multilingual translation projects with precision, cultural awareness, and accuracy has been invaluable. Binod’s professionalism, reliability, and timely delivery under tight deadlines make him a trusted partner. His dedication to high-quality work and seamless communication have greatly contributed to our success. We look forward to continuing our collaboration and appreciate his outstanding service.",
       rating: 5,
       date: "Feb 2025"
     },
@@ -147,6 +147,27 @@ const TestimonialsPage = () => {
       text: "Great work. Clients were very happy with the job done.",
       rating: 5,
       date: "Aug 2009"
+    },
+    {
+      id: 14,
+      author: "Victoria Pierce",
+      role: "Project Manager",
+      company: "Language Connect",
+      hasLogo: false,
+      text: "Binod is a skilled linguist and has a professional approach to work. He always adheres to deadlines, and is flexible, accurate and responsive. I am confident that he would be an asset to any organisation.",
+      rating: 5,
+      date: "Oct 2024"
+    },
+    {
+      id: 15,
+      author: "Al HADEED TRANSLATION / AHTS",
+      role: "Project Coordinator",
+      company: "Al Hadeed Translation Services",
+      hasLogo: true,
+      text: "Punctual and experienced translator..",
+      rating: 5,
+      logoUrl: "/ahts.png",
+      date: "Aug 2024"
     }
   ];
 
