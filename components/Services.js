@@ -156,6 +156,7 @@ const ServicesPage = () => {
     "Garo",
     "Khasi",
     "Konkani",
+    "Kashmiri",
     "Manipuri",
     "Mizo",
     "Maithili",
