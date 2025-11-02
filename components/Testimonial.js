@@ -17,7 +17,8 @@ const TestimonialsPage = () => {
       logoUrl: "/pab.png",
       text: "We are truly grateful for Binod's exceptional work as our language supplier. His expertise in managing multilingual translation projects with precision, cultural awareness, and accuracy has been invaluable. Binod’s professionalism, reliability, and timely delivery under tight deadlines make him a trusted partner. His dedication to high-quality work and seamless communication have greatly contributed to our success. We look forward to continuing our collaboration and appreciate his outstanding service.",
       rating: 5,
-      date: "Feb 2025"
+      date: "Feb 2025",
+      country: "United Kingdom"
     },
     {
       id: 2,
@@ -28,7 +29,8 @@ const TestimonialsPage = () => {
       logoUrl: "/hail.png",
       text: "Great cooperation always, very reliable partner.",
       rating: 5,
-      date: "Jan 2025"
+      date: "Jan 2025",
+      country: "Canada"
     },
     {
       id: 14,
@@ -38,7 +40,8 @@ const TestimonialsPage = () => {
       hasLogo: false,
       text: "Binod is a skilled linguist and has a professional approach to work. He always adheres to deadlines, and is flexible, accurate and responsive. I am confident that he would be an asset to any organisation.",
       rating: 5,
-      date: "Oct 2024"
+      date: "Oct 2024",
+      country: "Ireland"
     },
     {
       id: 15,
@@ -49,7 +52,8 @@ const TestimonialsPage = () => {
       text: "Punctual and experienced translator..",
       rating: 5,
       logoUrl: "/ahts.png",
-      date: "Aug 2024"
+      date: "Aug 2024",
+      country: "UAE"
     },
     {
       id: 3,
@@ -60,7 +64,8 @@ const TestimonialsPage = () => {
       logoUrl: "/lingo.png",
       text: "Everything is working out really well with our association. Thank you.",
       rating: 5,
-      date: "Apr 2023"
+      date: "Apr 2023",
+      country: "India"
     },
     {
       id: 4,
@@ -71,7 +76,8 @@ const TestimonialsPage = () => {
       logoUrl: "/oj.png",
       text: "Binod is the professional you would be looking for. Punctual deliveries and no complaints from clients. I firmly recommend him.",
       rating: 5,
-      date: "May 2020"
+      date: "May 2020",
+      country: "USA"
     },
     {
       id: 5,
@@ -82,7 +88,8 @@ const TestimonialsPage = () => {
       logoUrl: "/kick.png",
       text: "Excellent! Binod is the linguist every translation agency wants to have and work with. His dedication and accuracy is top notch. Recommended.",
       rating: 5,
-      date: "Jun 2018"
+      date: "Jun 2018",
+      country: "United Kingdom"
     },
     {
       id: 6,
@@ -93,7 +100,8 @@ const TestimonialsPage = () => {
       logoUrl: "/oncall.png",
       text: "Binod is a kind and reliable translator, who delivers jobs in time and always faithful to the original. I have worked with him in 4/5 occasions and so far I can just say that I am willing to collaborate with him again in the future.",
       rating: 5,
-      date: "Apr 2018"
+      date: "Apr 2018",
+      country: "Australia"
     },
     {
       id: 7,
@@ -103,7 +111,8 @@ const TestimonialsPage = () => {
       hasLogo: false,
       text: "Good translations and communication. Always on time.",
       rating: 5,
-      date: "Feb 2016"
+      date: "Feb 2016",
+      country: "Australia"
     },
     {
       id: 8,
@@ -114,7 +123,8 @@ const TestimonialsPage = () => {
       logoUrl: "/gate.png",
       text: "Real professional, excellent quality, strictly follows instructions and always on time. Our team enjoys working with him.",
       rating: 5,
-      date: "May 2016"
+      date: "May 2016",
+      country: "USA"
     },
     {
       id: 9,
@@ -125,7 +135,8 @@ const TestimonialsPage = () => {
       logoUrl: "/pro.png",
       text: "Excellent work and timely delivery.",
       rating: 5,
-      date: "Apr 2015"
+      date: "Apr 2015",
+      country: "USA"
     },
     {
       id: 10,
@@ -136,7 +147,8 @@ const TestimonialsPage = () => {
       logoUrl: "/loc.png",
       text: "Great job, delivery always before deadline, high quality. Love to work with him again.",
       rating: 5,
-      date: "Jul 2015"
+      date: "Jul 2015",
+      country: "Egypt"
     },
     {
       id: 11,
@@ -146,7 +158,8 @@ const TestimonialsPage = () => {
       hasLogo: false,
       text: "Excellent translator. On time and accurate.",
       rating: 5,
-      date: "Jan 2014"
+      date: "Jan 2014",
+      country: "USA"
     },
     {
       id: 12,
@@ -157,7 +170,8 @@ const TestimonialsPage = () => {
       logoUrl: "/euro.png",
       text: "Very happy with the quality of the work.",
       rating: 5,
-      date: "Dec 2013"
+      date: "Dec 2013",
+      country: "United Kingdom"
     },
     {
       id: 13,
@@ -167,7 +181,8 @@ const TestimonialsPage = () => {
       hasLogo: false,
       text: "Great work. Clients were very happy with the job done.",
       rating: 5,
-      date: "Aug 2009"
+      date: "Aug 2009",
+      country: "Argentina"
     },
     
   ];
@@ -301,6 +316,10 @@ const TestimonialsPage = () => {
                     <div className="flex items-center gap-1">
                       <Building2 className="w-3 h-3" />
                       <span>{testimonial.company}</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <MapPin className="w-3 h-3" />
+                      <span>{testimonial.country}</span>
                     </div>
                     <div className="flex items-center gap-1">
                       <Calendar className="w-3 h-3" />
