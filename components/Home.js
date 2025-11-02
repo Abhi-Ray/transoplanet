@@ -7,6 +7,8 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Language from './Language';
+
 const TransoplanetHome = () => {
   const [scrollY, setScrollY] = useState(0);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -321,7 +323,7 @@ const industries = [
 
   const stats = [
     { number: "32+", label: "Languages Supported", icon: <Languages className="w-6 h-6" /> },
-    { number: "Connecting", label: "Words, Culture & Businesses", icon: <FileCheck className="w-6 h-6" /> },
+    { number: "50 Million", label: "Words Translated till date.", icon: <FileCheck className="w-6 h-6" /> },
     { number: "15+", label: "Years of Experience", icon: <Award className="w-6 h-6" /> },
     { number: "99%", label: "Client Satisfaction", icon: <CheckCircle2 className="w-6 h-6" /> }
   ];
@@ -334,14 +336,14 @@ const industries = [
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-lg mb-6">
-                <div className="w-2 h-2 rounded-full bg-[#71d0f2] animate-pulse" />
+                <div className="w-2 h-2 rounded-full bg-[#01add5] animate-pulse" />
                 <span className="text-sm font-medium text-slate-700">Trusted by 500+ companies worldwide</span>
               </div>
 
               <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-                One-Stop Solution in
-                <span className="block text-[#71d0f2]">
-                  Translation
+                One Stop Shop for
+                <span className="block text-[#01add5]">
+                  Human Translation
                 </span>
               </h1>
 
@@ -361,7 +363,7 @@ const industries = [
                   {stats.slice(0, 2).map((stat, i) => (
                     <div key={i} className="bg-white rounded-2xl p-4 shadow-sm">
                       <div className="flex items-center gap-3 mb-2">
-                        <div className="text-[#71d0f2]">{stat.icon}</div>
+                        <div className="text-[#01add5]">{stat.icon}</div>
                         <span className="text-sm lg:text-2xl font-bold text-slate-900">{stat.number}</span>
                       </div>
                       <p className="text-xs lg:text-sm text-slate-600">{stat.label}</p>
@@ -381,7 +383,7 @@ const industries = [
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, i) => (
                 <div key={i} className="text-center">
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white text-[#71d0f2] mb-3 shadow">
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white text-[#01add5] mb-3 shadow">
                     {stat.icon}
                   </div>
                   <div className="text-2xl lg:text-3xl font-bold text-slate-900 mb-1">{stat.number}</div>
@@ -404,14 +406,14 @@ const industries = [
             {services.map((service, i) => (
               <div key={i} className="group relative">
                 <div className={`h-full bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-white`}>
-                  <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#71d0f2] text-white mb-5`}>
+                  <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#01add5] text-white mb-5`}>
                     {service.icon}
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 mb-3">{service.title}</h3>
                   <p className="text-slate-700 leading-relaxed">{service.description}</p>
-                  <div className="mt-5 flex items-center text-[#71d0f2] font-medium group-hover:gap-2 transition-all">
+                  <Link href="/services" className="mt-5 flex items-center text-[#01add5] font-medium group-hover:gap-2 transition-all">
                     Learn more <ArrowRight className="w-4 h-4 ml-1" />
-                  </div>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -447,14 +449,137 @@ const industries = [
           </div>
         </div>
       </section>
+          <Language/>
 
+{/* Focus Areas Section */}
+<section className="py-20 px-6 bg-gradient-to-br from-slate-50 to-[#01add5]/5">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-16">
+      <div className="inline-block mb-4">
+        <span className="px-4 py-2 bg-[#01add5]/10 text-[#01add5] rounded-full text-sm font-semibold">
+          Our Specializations
+        </span>
+      </div>
+      <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+         Focus Areas
+      </h2>
+      <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+        Deep expertise in critical translation domains
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-8">
+      {/* Medical Translation */}
+      <div className="group relative">
+        <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 h-full border-t-4 border-[#01add5]">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#01add5] text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+            <Heart className="w-8 h-8" />
+          </div>
+          
+          <h3 className="text-2xl font-bold text-slate-900 mb-3">Medical Translation Expertise</h3>
+          
+          <p className="text-slate-700 leading-relaxed mb-6">
+            Precision in healthcare terminology, HIPAA compliance, and pharmaceutical documentation. Our certified medical translators ensure accuracy where lives depend on precision.
+          </p>
+          
+          <ul className="space-y-3 mb-6">
+            <li className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 text-[#01add5] flex-shrink-0 mt-0.5" />
+              <span className="text-slate-700">Clinical & medical records</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 text-[#01add5] flex-shrink-0 mt-0.5" />
+              <span className="text-slate-700">Pharmaceutical documents</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 text-[#01add5] flex-shrink-0 mt-0.5" />
+              <span className="text-slate-700">Research & clinical trials</span>
+            </li>
+          </ul>
+          
+          <Link href="/services" className="inline-flex items-center text-[#01add5] font-bold hover:gap-2 transition-all">
+            Learn more <ArrowRight className="w-4 h-4 ml-1" />
+          </Link>
+        </div>
+      </div>
+
+      {/* Bengali Translation */}
+      <div className="group relative">
+        <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 h-full border-t-4 border-[#01add5]">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#01add5] text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+            <Languages className="w-8 h-8" />
+          </div>
+          
+          <h3 className="text-2xl font-bold text-slate-900 mb-3">Bengali Translation Expertise</h3>
+          
+          <p className="text-slate-700 leading-relaxed mb-6">
+            Native Bengali expertise serving India, Bangladesh, and diaspora communities. We handle complex linguistic nuances and cultural contexts with native proficiency.
+          </p>
+          
+          <ul className="space-y-3 mb-6">
+            <li className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 text-[#01add5] flex-shrink-0 mt-0.5" />
+              <span className="text-slate-700">Business & corporate documents</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 text-[#01add5] flex-shrink-0 mt-0.5" />
+              <span className="text-slate-700">Literary & cultural content</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 text-[#01add5] flex-shrink-0 mt-0.5" />
+              <span className="text-slate-700">Legal & Government translations</span>
+            </li>
+          </ul>
+          
+          <Link href="/services" className="inline-flex items-center text-[#01add5] font-bold hover:gap-2 transition-all">
+            Learn more <ArrowRight className="w-4 h-4 ml-1" />
+          </Link>
+        </div>
+      </div>
+
+      {/* Rare Language Translation */}
+      <div className="group relative">
+        <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 h-full border-t-4 border-[#01add5]">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#01add5] text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+            <Globe className="w-8 h-8" />
+          </div>
+          
+          <h3 className="text-2xl font-bold text-slate-900 mb-3">Rare Language Expertise</h3>
+          
+          <p className="text-slate-700 leading-relaxed mb-6">
+            Access to specialists in less commonly spoken languages across South Asia, Southeast Asia, and Europe. We bridge communication gaps where others can't.
+          </p>
+          
+          <ul className="space-y-3 mb-6">
+            <li className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 text-[#01add5] flex-shrink-0 mt-0.5" />
+              <span className="text-slate-700">17 rare languages available</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 text-[#01add5] flex-shrink-0 mt-0.5" />
+              <span className="text-slate-700">Regional dialect expertise</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 text-[#01add5] flex-shrink-0 mt-0.5" />
+              <span className="text-slate-700">Cultural & linguistic nuance</span>
+            </li>
+          </ul>
+          
+          <Link href="/services" className="inline-flex items-center text-[#01add5] font-bold hover:gap-2 transition-all">
+            Learn more <ArrowRight className="w-4 h-4 ml-1" />
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Team Section */}
       <section className="py-20 px-6 bg-[#f0f8ff] relative overflow-hidden">
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <div className="inline-block mb-4">
-              <span className="px-4 py-2 bg-[#71d0f2]/10 text-[#71d0f2] rounded-full text-sm font-semibold">
+              <span className="px-4 py-2 bg-[#01add5]/10 text-[#01add5] rounded-full text-sm font-semibold">
                 Our Team
               </span>
             </div>
@@ -487,7 +612,7 @@ const industries = [
                   }}
                 >
                   <div className="relative bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 w-[350px] lg:w-[300px]">
-                    <div className="relative mb-6 overflow-hidden rounded-2xl ring-4 ring-white group-hover:ring-[#71d0f2] transition-all duration-300">
+                    <div className="relative mb-6 overflow-hidden rounded-2xl ring-4 ring-white group-hover:ring-[#01add5] transition-all duration-300">
                       <img 
                         src={member.image} 
                         alt={member.name}
@@ -495,7 +620,7 @@ const industries = [
                       />
                     </div>
                     <div className="text-center">
-                      <h3 className="text-xl font-bold text-slate-900 mb-1 group-hover:text-[#71d0f2] transition-colors duration-300">
+                      <h3 className="text-xl font-bold text-slate-900 mb-1 group-hover:text-[#01add5] transition-colors duration-300">
                         {member.name}
                       </h3>
                       <p className="text-xs text-slate-500">{member.role}</p>
@@ -512,8 +637,8 @@ const industries = [
      <section className="pt-20 pb-10 px-6 bg-[#f9fafb]">
     <div className="max-w-7xl mx-auto relative">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#71d0f2]/10 text-[#71d0f2] mb-4">
-            <Star className="w-4 h-4 fill-[#71d0f2]" />
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#01add5]/10 text-[#01add5] mb-4">
+            <Star className="w-4 h-4 fill-[#01add5]" />
             <span className="text-sm font-semibold">Trusted by 500+ Companies</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
@@ -546,8 +671,8 @@ const industries = [
       >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all relative overflow-hidden group h-[450px] flex flex-col mb-12 mx-2">
-                <div className="absolute top-0 right-0 w-40 h-40 bg-[#71d0f2]/10 rounded-full blur-3xl group-hover:opacity-20 transition-opacity"></div>
+            <Link href="/testimonial" className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all relative overflow-hidden group h-[450px] flex flex-col mb-12 mx-2">
+                <div className="absolute top-0 right-0 w-40 h-40 bg-[#01add5]/10 rounded-full blur-3xl group-hover:opacity-20 transition-opacity"></div>
 
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="mb-4 h-12 flex items-center">
@@ -560,7 +685,7 @@ const industries = [
                         />
                       </div>
                     ) : (
-                      <div className="bg-[#71d0f2] w-12 h-12 rounded-xl flex items-center justify-center">
+                      <div className="bg-[#01add5] w-12 h-12 rounded-xl flex items-center justify-center">
                         <Quote className="w-6 h-6 text-white" />
                       </div>
                     )}
@@ -588,7 +713,7 @@ const industries = [
                     <p className="text-slate-400 text-xs mt-2">{testimonial.date}</p>
                   </div>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -597,7 +722,7 @@ const industries = [
         ref={prevRef}
        className="absolute left-[-1rem] top-[60%] -translate-y-1/2 z-10 cursor-pointer"
       >
-        <div className="w-11 h-11 bg-white rounded-xl shadow-lg hover:shadow-xl hover:bg-[#71d0f2] transition-all duration-300 flex items-center justify-center group border border-slate-100 hover:border-transparent">
+        <div className="w-11 h-11 bg-white rounded-xl shadow-lg hover:shadow-xl hover:bg-[#01add5] transition-all duration-300 flex items-center justify-center group border border-slate-100 hover:border-transparent">
           <ChevronLeft className="w-5 h-5 text-slate-600 group-hover:text-white transition-colors" />
         </div>
       </div>
@@ -606,7 +731,7 @@ const industries = [
         ref={nextRef}
         className="absolute right-[-1rem] top-[60%] -translate-y-1/2 z-10 cursor-pointer"
       >
-        <div className="w-11 h-11 bg-white rounded-xl shadow-lg hover:shadow-xl hover:bg-[#71d0f2] transition-all duration-300 flex items-center justify-center group border border-slate-100 hover:border-transparent">
+        <div className="w-11 h-11 bg-white rounded-xl shadow-lg hover:shadow-xl hover:bg-[#01add5] transition-all duration-300 flex items-center justify-center group border border-slate-100 hover:border-transparent">
           <ChevronRight className="w-5 h-5 text-slate-600 group-hover:text-white transition-colors" />
         </div>
       </div>
@@ -617,16 +742,16 @@ const industries = [
       {/* CTA Section */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-[#71d0f2] rounded-3xl shadow-2xl p-12 text-center text-white relative overflow-hidden">
+          <div className="bg-[#01add5] rounded-3xl shadow-2xl p-12 text-center text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-white/10 backdrop-blur-3xl" />
             <div className="relative z-10">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Go Global?</h2>
               <p className="text-xl mb-8 text-blue-100">Join hundreds of companies who trust Transoplanet</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact" className="px-8 py-4 rounded-xl bg-white text-[#71d0f2] font-bold shadow-xl hover:shadow-2xl transition-all">
+                <Link href="/contact" className="px-8 py-4 rounded-xl bg-white text-[#01add5] font-bold shadow-xl hover:shadow-2xl transition-all">
                   Get Free Quote
                 </Link>
-                <Link href="/contact" className="px-8 py-4 rounded-xl border-2 border-white text-white font-bold hover:bg-white hover:text-[#71d0f2] transition-all">
+                <Link href="/contact" className="px-8 py-4 rounded-xl border-2 border-white text-white font-bold hover:bg-white hover:text-[#01add5] transition-all">
                   Contact Sales
                 </Link>
               </div>

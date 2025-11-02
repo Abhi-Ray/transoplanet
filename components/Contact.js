@@ -5,7 +5,7 @@ import Link from 'next/link';
 const ContactPage = () => {
   const [selectedService, setSelectedService] = useState('');
 
-  const primaryColor = '#71d0f2';
+  const primaryColor = '#01add5';
 
   const services = [
     "Human Translation",
@@ -23,24 +23,18 @@ const ContactPage = () => {
 
   const offices = [
     {
-      city: "Guwahati",
-      state: "Assam",
-      country: "India",
+      city: "VIP Road, Guwahati, Assam",
       type: "Headquarters",
       icon: "🏢"
     },
     {
-      city: "Bangalore",
-      state: "Karnataka",
-      country: "India",
-      type: "Regional Office",
+      city: "Varthur Road, Bengaluru",
+      type: "Additional Office",
       icon: "🏙️"
     },
     {
-      city: "Delhi",
-      state: "",
-      country: "India",
-      type: "Regional Office",
+      city: "Noida, Sector 41, Delhi NCR",
+      type: "Additional Office",
       icon: "🌆"
     }
   ];
@@ -343,9 +337,7 @@ const ContactPage = () => {
                 >
                   {office.type}
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">{office.city}</h3>
-                {office.state && <p className="text-lg text-gray-600 mb-1">{office.state}</p>}
-                <p className="text-lg text-gray-600">{office.country}</p>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{office.city}</h3>
               </div>
             ))}
           </div>

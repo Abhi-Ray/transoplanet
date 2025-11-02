@@ -5,7 +5,7 @@ import { Globe, Menu, X, Phone, Mail, MapPin, Star, Quote, Building2, MapPinned,
 import Link from 'next/link';
 const TestimonialsPage = () => {
   const [filter, setFilter] = useState('all');
-  const primaryColor = '#71d0f2';
+  const primaryColor = '#01add5';
 
   const testimonials = [
     {

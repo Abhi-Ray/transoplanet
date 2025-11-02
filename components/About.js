@@ -3,35 +3,29 @@
 import React, { useState } from 'react';
 import { Globe, Users, FileCheck, TrendingUp, Award, Target, Heart, Shield, Zap, CheckCircle, Building2, MapPinned, Clock, Lightbulb, ArrowRight, Briefcase, Handshake } from 'lucide-react';
 import Link from 'next/link';
+import Language from './Language';
+
 const AboutPage = () => {
   const [flippedCard, setFlippedCard] = useState(null);
 
   const milestones = [
     {
-      year: "2010",
+      year: "2007",
       title: "Foundation",
-      description: "Transoplanet established in Guwahati, India with a vision to bridge language barriers"
+      description: "In 2007, Mr. Binod Ringania started as a freelance translator."
     },
     {
       year: "2013",
       title: "10 Languages",
       description: "Expanded our services to cover 10 Indian and Asian languages"
     },
-    {
-      year: "2016",
-      title: "Bangalore Office",
-      description: "Opened our second office in Bangalore to serve South India better"
-    },
+   
     {
       year: "2019",
       title: "50M+ Words",
       description: "Achieved milestone of translating 50 million words"
     },
-    {
-      year: "2022",
-      title: "Delhi Expansion",
-      description: "Established presence in Delhi, expanding to 32+ languages"
-    },
+   
     {
       year: "2025",
       title: "100M+ Words",
@@ -128,7 +122,7 @@ const AboutPage = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div>
-                <h2 className="text-6xl font-bold text-[#71d0f2] mb-6">About Us</h2>
+                <h2 className="text-6xl font-bold text-[#01add5] mb-6">About Us</h2>
                 <p className="text-lg text-gray-700 mb-4">
                   Founded in 2010, Transoplanet emerged from a simple yet powerful vision: to break down language barriers and enable seamless global communication.
                 </p>
@@ -140,15 +134,15 @@ const AboutPage = () => {
                 </p>
                 <div className="flex gap-8">
                   <div>
-                    <h3 className="text-3xl font-bold" style={{ color: '#71d0f2' }}>300+</h3>
+                    <h3 className="text-3xl font-bold" style={{ color: '#01add5' }}>300+</h3>
                     <p className="text-gray-600">Expert Translators</p>
                   </div>
                   <div>
-                    <h3 className="text-3xl font-bold" style={{ color: '#71d0f2' }}>500+</h3>
+                    <h3 className="text-3xl font-bold" style={{ color: '#01add5' }}>500+</h3>
                     <p className="text-gray-600">Happy Clients</p>
                   </div>
                   <div>
-                    <h3 className="text-3xl font-bold" style={{ color: '#71d0f2' }}>32+</h3>
+                    <h3 className="text-3xl font-bold" style={{ color: '#01add5' }}>32+</h3>
                     <p className="text-gray-600">Languages</p>
                   </div>
                 </div>
@@ -166,8 +160,8 @@ const AboutPage = () => {
 
             {/* Mission & Vision */}
             <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <div className="bg-gray-50 rounded-2xl p-8 border-2" style={{ borderColor: '#71d0f2' }}>
-                <div className="w-14 h-14 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#71d0f2' }}>
+              <div className="bg-gray-50 rounded-2xl p-8 border-2" style={{ borderColor: '#01add5' }}>
+                <div className="w-14 h-14 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#01add5' }}>
                   <Target className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
@@ -175,8 +169,8 @@ const AboutPage = () => {
                   To provide accurate, culturally sensitive, and timely translation services that empower businesses to communicate effectively across borders and cultures.
                 </p>
               </div>
-              <div className="bg-gray-50 rounded-2xl p-8 border-2" style={{ borderColor: '#71d0f2' }}>
-                <div className="w-14 h-14 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#71d0f2' }}>
+              <div className="bg-gray-50 rounded-2xl p-8 border-2" style={{ borderColor: '#01add5' }}>
+                <div className="w-14 h-14 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#01add5' }}>
                   <TrendingUp className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
@@ -199,7 +193,7 @@ const AboutPage = () => {
 
     <div className="max-w-5xl mx-auto relative">
       {/* Timeline Line (hidden on mobile) */}
-      <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#71d0f2]"></div>
+      <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#01add5]"></div>
 
       {milestones.map((milestone, index) => (
         <div key={index} className="mb-12 flex flex-col md:flex-row items-center">
@@ -207,7 +201,7 @@ const AboutPage = () => {
           <div className={`w-full md:w-1/2 flex ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
             {index % 2 === 0 && (
               <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition border border-gray-100 w-full md:w-auto">
-                <div className="text-3xl font-bold mb-2" style={{ color: '#71d0f2' }}>
+                <div className="text-3xl font-bold mb-2" style={{ color: '#01add5' }}>
                   {milestone.year}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{milestone.title}</h3>
@@ -217,13 +211,13 @@ const AboutPage = () => {
           </div>
 
           {/* Center Dot */}
-          <div className="hidden md:flex w-6 h-6 rounded-full border-4 border-white shadow-lg z-10 bg-[#71d0f2]"></div>
+          <div className="hidden md:flex w-6 h-6 rounded-full border-4 border-white shadow-lg z-10 bg-[#01add5]"></div>
 
           {/* Right Column */}
           <div className={`w-full md:w-1/2 flex ${index % 2 !== 0 ? 'justify-start' : 'justify-end'}`}>
             {index % 2 !== 0 && (
               <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition border border-gray-100 w-full md:w-auto">
-                <div className="text-3xl font-bold mb-2" style={{ color: '#71d0f2' }}>
+                <div className="text-3xl font-bold mb-2" style={{ color: '#01add5' }}>
                   {milestone.year}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{milestone.title}</h3>
@@ -255,14 +249,14 @@ const AboutPage = () => {
                 onMouseLeave={() => setFlippedCard(null)}
               >
                 <div className={`absolute inset-0 transition-all duration-500 transform ${flippedCard === index ? 'rotate-y-180 opacity-0' : 'rotate-y-0 opacity-100'}`}>
-                  <div className="rounded-2xl p-8 h-full flex flex-col items-center justify-center text-white shadow-xl" style={{ backgroundColor: '#71d0f2' }}>
+                  <div className="rounded-2xl p-8 h-full flex flex-col items-center justify-center text-white shadow-xl" style={{ backgroundColor: '#01add5' }}>
                     <div className="mb-6">{value.icon}</div>
                     <h3 className="text-2xl font-bold mb-3">{value.title}</h3>
                     <p className="text-white opacity-90 text-center">{value.front}</p>
                   </div>
                 </div>
                 <div className={`absolute inset-0 transition-all duration-500 transform ${flippedCard === index ? 'rotate-y-0 opacity-100' : 'rotate-y-180 opacity-0'}`}>
-                  <div className="bg-white rounded-2xl p-8 h-full flex flex-col justify-center shadow-xl border-2" style={{ borderColor: '#71d0f2' }}>
+                  <div className="bg-white rounded-2xl p-8 h-full flex flex-col justify-center shadow-xl border-2" style={{ borderColor: '#01add5' }}>
                     <h3 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h3>
                     <p className="text-gray-700">{value.back}</p>
                   </div>
@@ -273,6 +267,7 @@ const AboutPage = () => {
         </div>
       </section>
 
+          <Language/>
       
       {/* Offices */}
       <section className="py-20 bg-gray-50">
@@ -285,8 +280,8 @@ const AboutPage = () => {
           <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
             {offices.map((office, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
-                <div className="mb-4" style={{ color: '#71d0f2' }}>{office.icon}</div>
-                <div className="inline-block text-white px-3 py-1 rounded-full text-sm font-semibold mb-3" style={{ backgroundColor: '#71d0f2' }}>
+                <div className="mb-4" style={{ color: '#01add5' }}>{office.icon}</div>
+                <div className="inline-block text-white px-3 py-1 rounded-full text-sm font-semibold mb-3" style={{ backgroundColor: '#01add5' }}>
                   {office.type}
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">{office.city}</h3>
@@ -301,7 +296,7 @@ const AboutPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 overflow-hidden" style={{ backgroundColor: '#71d0f2' }}>
+      <section className="relative py-20 overflow-hidden" style={{ backgroundColor: '#01add5' }}>
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 right-10 w-96 h-96 bg-white rounded-full filter blur-3xl"></div>
           <div className="absolute bottom-10 left-10 w-96 h-96 bg-white rounded-full filter blur-3xl"></div>

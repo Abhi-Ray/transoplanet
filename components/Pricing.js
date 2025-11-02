@@ -8,7 +8,7 @@ const PricingPage = () => {
   const [pricingType, setPricingType] = useState('word');
   const [expandedFaq, setExpandedFaq] = useState(null);
 
-  const primaryColor = '#71d0f2';
+  const primaryColor = '#01add5';
 
   const perWordPricing = [
     {

@@ -29,20 +29,20 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-bold mb-4">Quick Links</h4>
               <div className="space-y-2">
-                <Link href="/" className="block text-gray-600 hover:text-[#71d0f2] transition">Home</Link>
-                <Link href="/about" className="block text-gray-600 hover:text-[#71d0f2] transition">About Us</Link>
-                <Link href="/services" className="block text-gray-600 hover:text-[#71d0f2] transition">Services</Link>
-                <Link href="/contact" className="block text-gray-600 hover:text-[#71d0f2] transition">Contact</Link>
+                <Link href="/" className="block text-gray-600 hover:text-[#01add5] transition">Home</Link>
+                <Link href="/about" className="block text-gray-600 hover:text-[#01add5] transition">About Us</Link>
+                <Link href="/services" className="block text-gray-600 hover:text-[#01add5] transition">Services</Link>
+                <Link href="/contact" className="block text-gray-600 hover:text-[#01add5] transition">Contact</Link>
               </div>
             </div>
 
             <div>
               <h4 className="text-lg font-bold mb-4">Services</h4>
               <div className="space-y-2">
-                <Link href="/services" className="block text-gray-600 hover:text-[#71d0f2] transition">Human Translation</Link>
-                <Link href="/services" className="block text-gray-600 hover:text-[#71d0f2] transition">MTPE</Link>
-                <Link href="/services" className="block text-gray-600 hover:text-[#71d0f2] transition">Transcription</Link>
-                <Link href="/services" className="block text-gray-600 hover:text-[#71d0f2] transition">Localization</Link>
+                <Link href="/services" className="block text-gray-600 hover:text-[#01add5] transition">Human Translation</Link>
+                <Link href="/services" className="block text-gray-600 hover:text-[#01add5] transition">MTPE</Link>
+                <Link href="/services" className="block text-gray-600 hover:text-[#01add5] transition">Transcription</Link>
+                <Link href="/services" className="block text-gray-600 hover:text-[#01add5] transition">Localization</Link>
               </div>
             </div>
 
@@ -50,15 +50,15 @@ const Footer = () => {
               <h4 className="text-lg font-bold mb-4">Contact</h4>
               <div className="space-y-3">
                 <div className="flex items-start gap-2">
-                  <Phone className="w-5 h-5 text-[#71d0f2] mt-1" />
-                  <a href="tel:+919864072186" className="text-gray-600 hover:text-[#71d0f2] transition">+91-9864072186</a>
+                  <Phone className="w-5 h-5 text-[#01add5] mt-1" />
+                  <a href="tel:+919864072186" className="text-gray-600 hover:text-[#01add5] transition">+91-9864072186</a>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Mail className="w-5 h-5 text-[#71d0f2] mt-1" />
-                  <a href="mailto:info@transoplanet.com" className="text-gray-600 hover:text-[#71d0f2] transition">info@transoplanet.com</a>
+                  <Mail className="w-5 h-5 text-[#01add5] mt-1" />
+                  <a href="mailto:info@transoplanet.com" className="text-gray-600 hover:text-[#01add5] transition">info@transoplanet.com</a>
                 </div>
                 <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-[#71d0f2] mt-1" />
+                  <MapPin className="w-5 h-5 text-[#01add5] mt-1" />
                   <span className="text-gray-600">Guwahati, Bangalore, Delhi</span>
                 </div>
               </div>

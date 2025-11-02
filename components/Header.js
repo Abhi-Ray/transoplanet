@@ -43,25 +43,25 @@ const Header = () => {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
+              <Link href="/" className="text-gray-700 hover:text-[#01add5] transition font-medium">
                 Home
               </Link>
-              <Link href="/about" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
-                About Us
+              <Link href="/about" className="text-gray-700 hover:text-[#01add5] transition font-medium">
+                Company Journey
               </Link>
-              <Link href="/services" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
+              <Link href="/services" className="text-gray-700 hover:text-[#01add5] transition font-medium">
                 Services
               </Link>
-              <Link href="/pricing" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
-                Pricing
-              </Link>
-              <Link href="/testimonial" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
+             <Link href="/domains" className="text-gray-700 hover:text-[#01add5] transition font-medium">
+              Domains
+            </Link>
+              <Link href="/testimonial" className="text-gray-700 hover:text-[#01add5] transition font-medium">
                 Testimonials
               </Link>
-              <Link href="/contact" className="text-gray-700 hover:text-[#71d0f2] transition font-medium">
+              <Link href="/contact" className="text-gray-700 hover:text-[#01add5] transition font-medium">
                 Contact
               </Link>
-              <Link href="/contact" className="bg-[#71d0f2] text-white px-6 py-2 rounded-full hover:bg-[#5bc9ef] hover:shadow-lg transform hover:scale-105 transition">
+              <Link href="/contact" className="bg-[#01add5] text-white px-6 py-2 rounded-full hover:bg-[#5bc9ef] hover:shadow-lg transform hover:scale-105 transition">
                 Get a Quote
               </Link>
             </div>
@@ -82,25 +82,25 @@ const Header = () => {
       {isMenuOpen && (
         <div className="fixed inset-0 z-40 bg-white pt-30 px-4 md:hidden">
           <div className="flex flex-col space-y-4">
-            <Link href="/" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/" className="text-gray-700 hover:text-[#01add5] py-2" onClick={() => setIsMenuOpen(false)}>
               Home
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
-              About Us
+            <Link href="/about" className="text-gray-700 hover:text-[#01add5] py-2" onClick={() => setIsMenuOpen(false)}>
+                             Company Journey
             </Link>
-            <Link href="/services" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/services" className="text-gray-700 hover:text-[#01add5] py-2" onClick={() => setIsMenuOpen(false)}>
               Services
             </Link>
-            <Link href="/pricing" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
-              Pricing
+            <Link href="/domains" className="text-gray-700 hover:text-[#01add5] py-2" onClick={() => setIsMenuOpen(false)}>
+              Domains
             </Link>
-            <Link href="/testimonial" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/testimonial" className="text-gray-700 hover:text-[#01add5] py-2" onClick={() => setIsMenuOpen(false)}>
               Testimonials
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-[#71d0f2] py-2" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/contact" className="text-gray-700 hover:text-[#01add5] py-2" onClick={() => setIsMenuOpen(false)}>
               Contact
             </Link>
-            <Link href="/contact" className="bg-[#71d0f2] text-white px-6 py-3 rounded-full w-full hover:bg-[#5bc9ef] transition">
+            <Link href="/contact" className="bg-[#01add5] text-white px-6 py-3 rounded-full w-full hover:bg-[#5bc9ef] transition">
               Get a Quote
             </Link>
           </div>
